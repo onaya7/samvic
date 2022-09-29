@@ -9,6 +9,7 @@
 }
 
 :root{
+    --white: #F7F8FC;
     --bg-color:#ffffff;
     --text-color:#111111;
     --main-color:#c8815f;
@@ -308,8 +309,8 @@ header.sticky{
 .main img:hover{
     opacity: 1;
 }
-
-.contact{
+footer{
+    padding: 50px 14%;
     background: var(--text-color);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
@@ -388,6 +389,435 @@ header.sticky{
     border-radius: 2rem;
 }
 
+
+
+/* SIGNIN PAGE */
+.auth-container{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.auth-box{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width:400px;
+}
+
+.signin-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+.signin-text h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 29px;
+    color: var(--bg-color);
+}
+
+.auth-box  .input-bx{
+    position: relative;
+    width: 100%;
+}
+
+.auth-box  .input-bx input{
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: var(--text-color);
+    letter-spacing: 0.5px;
+    margin-bottom: 30px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid var(--main-color);
+    outline: none;
+}
+
+.auth-box  .input-bx label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 0.7rem;
+    transition: .4s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+
+
+.auth-box input[type="submit"]{
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    width: 90%;
+    border-radius: 1rem;
+    padding: 8px 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--bg-color);
+}
+.auth-box input[type="submit"]:hover{
+    transform: scale(1.1);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.auth-box .input-bx input:focus ~ label,
+.auth-box .input-bx input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+.signin-bm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: 10px;
+    font-weight: 600;
+    width: 100%;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+}
+
+.auth-box span {
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+
+}
+
+.auth-box  a{
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: var(--main-color);
+
+}
+
+/* Product  page*/
+#p-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    gap: 10px;
+    
+}
+
+.product img{
+    width: 100%;
+    height: auto;
+}
+
+.product .p-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.star i {
+    color: orangered;
+}
+#price{
+    color: var(--main-color);
+    font-weight: 700;
+
+}
+
+.p-cart{
+    padding: 10px 10%;
+    border: 1px solid var(--main-color);
+    transition: .4s;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    
+   
+} 
+
+.p-cart:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+
+/* Product single page */
+.single-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 5rem;
+    grid-gap: 5rem;
+}
+
+.single-img{
+    height: 550px;
+    width: 500px;
+}
+
+.single-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.single-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.single-text #text{
+    text-transform: lowercase;
+}
+.single-text p{
+    padding: 10px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.single-text p span{
+    font-weight: 700;
+}
+
+.qty-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.qty{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  border-radius: 12px;
+  width: 150px;
+  border: 1px solid #ddc0c0;
+}
+
+.qty span{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    color: var(--main-color);
+    cursor: pointer;
+    
+}
+
+.qty span.minus{
+    font-size: 2rem;
+}
+
+.qty span.plus{
+    font-size: 2rem;
+}
+
+.qty span.num{
+    font-size: 1.5rem;
+    border-right: 2px solid #ddc0c0;
+    border-left: 2px solid #ddc0c0;
+}
+
+.qty-wrapper{
+    margin-top: 10px;
+    border-top: 1px solid var(--text-color) ;
+    border-bottom: 1px solid var(--text-color);
+    padding: 30px 0;
+}
+
+.s-cart{
+    padding: 10px;
+    border: 1px solid var(--main-color);
+    color: var(--text-color);
+    transition: .4s;
+}
+
+.s-cart:hover{
+   background-color: var(--main-color);
+    color: var(--bg-color);
+}
+
+.line{
+    margin-top: 0.5rem;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+.single-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.3rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+/* Cart view */
+.caption{
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.cart-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap:20px;
+
+}
+
+
+.cart-content{
+    background-color: #EEEBD0;
+    border-radius: 1rem;
+    width:600px;
+    
+}
+table{
+    width: 100%;
+}
+
+
+
+.cart-content tr:last-child{
+    text-align: center;
+    
+    
+}
+
+.cart-content th{
+    text-align: left;
+}
+
+.cart-content table , th, td{
+    border-collapse: collapse;
+    padding: 20px 10px;
+    font-size: 0.8rem;
+}
+
+.cart-content  tr{
+    border-bottom: 2px solid white;
+}
+.cart-content i{
+    font-size: 15px;
+    color: var(--bg-color);
+    padding: 2px;
+    background: var(--main-color);
+    border-radius: 2rem;
+}
+
+#t-img{
+    width: 50px;
+    height: 50px;
+   
+}
+ #t-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+    #update-cartbtn{
+    color: #ffffff;
+    background-color: var(--main-color);
+    padding:10px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    transition: .4s;
+}
+
+#update-cartbtn:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+
+}
+
+.checkout{
+    display: flex;
+    flex-direction: column;
+    background-color: #EEEBD0;
+    border-radius: 1rem;
+    padding: 10px;
+    width: 200px;
+    height:200px;
+    box-shadow: 0px 15px 25px -4px rgba(150, 150, 150, 0.24)
+  
+}
+
+.checkout-content{
+    margin-top: 10px;
+    width:100%;
+}
+
+.subtotal ,.total{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.subtotal p, .total p{
+    color: #c8815f;
+}
+
+.subtotal span, .total span{
+    font-weight: 400;
+}
+
+.checkout-btn {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    border-radius: 0.5rem;
+    color:var(--text-color);
+    border: 1px solid var(--main-color);
+    transition: .4s;
+   
+
+  
+}
+
+
+.checkout-btn:hover{
+    background-color: var(--main-color);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+
+
+
 @media (max-width: 1000px){
     header{
         padding: 7px 4%;
@@ -403,6 +833,9 @@ header.sticky{
         padding: 80px 4%;
         transition: .1s;
     }
+
+   
+   
 }
 
 @media (max-width: 670px){
@@ -434,5 +867,29 @@ header.sticky{
 
     .navlist.open{
         left: 0;
+    }
+}
+
+@media (max-width: 400px){
+
+    header{
+        padding: 7px 4%;
+        transition:  0.2s;
+    }
+
+    header.sticky{
+        padding: 14px 4%;
+        transition:  .2s;
+    }
+
+    section{
+        padding: 80px 0;
+        transition: .1s;
+    }
+    .cart-content table, th, td {
+        border-collapse: collapse;
+        padding: 20px 0;
+        font-size: 0.7rem;
+
     }
 }
