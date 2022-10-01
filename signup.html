@@ -45,18 +45,21 @@
                     </div>
                     <form action="#">
                         <div class="input-bx">
-                            <input type="text" name="firstname" autocomplete="off" required>
+                            <input type="text" placeholder="a" name="firstname" autocomplete="off" required>
                             <label>Firstname</label>
                         </div>
     
                         <div class="input-bx">
-                            <input type="text" name="lastname" autocomplete="off" required>
+                            <input type="text" placeholder="a" name="lastname" autocomplete="off" required>
                             <label>Lastname</label>
                         </div>
     
                         <div class="input-bx">
                             <input type="email" name="email" autocomplete="off" required>
                             <label>Email</label>
+                            <div class="invalid-feedback">
+                                <span>This email is already used by another account</span>
+                            </div>
                         </div>
     
                         <div class="input-bx">
@@ -67,6 +70,7 @@
                         <div class="input-bx">
                             <input type="password" name="password" autocomplete="off" required>
                             <label>Confirm password</label>
+                            
                         </div>
     
     
